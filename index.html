@@ -1,1 +1,238 @@
-Hello, world!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varrnam by Anu - Tanjore Painting Artist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #8B4513;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #D2691E;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .hero-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #8B4513;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            color: #8B4513;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .service-description {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .shipping-info {
+            background: linear-gradient(135deg, #8B4513, #D2691E);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .shipping-info h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .shipping-info p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .art-style {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .art-style h2 {
+            font-size: 2.5rem;
+            color: #8B4513;
+            margin-bottom: 20px;
+        }
+
+        .art-style p {
+            font-size: 1.3rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            color: #8B4513;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Varrnam by Anu</h1>
+            <p class="subtitle">Artist & Tanjore Painting Specialist</p>
+        </header>
+
+        <section class="hero-section">
+            <h2 style="text-align: center; color: #8B4513; margin-bottom: 20px; font-size: 2rem;">Welcome to the World of Tanjore Painting</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #666; max-width: 800px; margin: 0 auto;">
+                Discover the rich tradition of Tanjore painting, a classical South Indian art form that combines 
+                vibrant colors, gold foil, and intricate details to create stunning masterpieces.
+            </p>
+        </section>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3 class="service-title">Custom Tanjore Paintings</h3>
+                <p class="service-description">
+                    Commission beautiful, personalized Tanjore paintings tailored to your preferences. 
+                    Each piece is handcrafted with traditional techniques and materials.
+                </p>
+            </div>
+
+
+
+            <div class="service-card">
+                <div class="service-icon">👶</div>
+                <h3 class="service-title">Art Classes for Kids</h3>
+                <p class="service-description">
+                    Nurture creativity in young minds with our specialized art classes designed for children. 
+                    Learn traditional and contemporary art techniques in a fun, engaging environment.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎭</div>
+                <h3 class="service-title">Art Workshops for Adults</h3>
+                <p class="service-description">
+                    Join our comprehensive art workshops for adults. Perfect for beginners and experienced 
+                    artists alike. Learn Tanjore painting and other Indian folk art techniques.
+                </p>
+            </div>
+        </div>
+
+
+
+        <section class="art-style">
+            <h2>Indian Folk Art Specialization</h2>
+            <p>
+                Specializing in traditional Indian folk art, particularly the exquisite Tanjore painting style. 
+                Our work celebrates the rich cultural heritage of India through vibrant colors, intricate details, 
+                and traditional techniques passed down through generations.
+            </p>
+        </section>
+
+        <footer>
+            <div class="contact-info">
+                <p><strong>Varrnam by Anu</strong></p>
+                <p>Artist & Tanjore Painting Specialist</p>
+                <p>Custom Orders • Art Classes • Workshops</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
